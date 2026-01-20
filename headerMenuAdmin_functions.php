@@ -128,7 +128,7 @@ function headerMenuAdmin_applyAddRule($menuArray, $rule) {
         'menuType'   => 'custom',
         'link'       => $rule['add_link'] ?? '#',
         'visibility' => $rule['add_visibility'] ?? 'showAlways',
-        'target'     => $rule['add_target'] ?? '_self',
+        'linkTarget' => $rule['add_target'] ?? '_self',
         'isSelected' => false,
     ];
     

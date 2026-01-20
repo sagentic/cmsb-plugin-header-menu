@@ -79,7 +79,7 @@ function headerMenuAdmin_dashboard(): void
             }
 
             $editLink = '?_pluginAction=headerMenuAdmin_editRule&index=' . $index;
-            $deleteLink = '?_pluginAction=headerMenuAdmin_deleteRule&index=' . $index . '&_CSRFToken=' . ($_SESSION['_CSRFToken']??'');
+            $deleteLink = '?_pluginAction=headerMenuAdmin_deleteRule&index=' . $index . '&_csrf=' . ($_SESSION['_csrf']??'');
 
             $content .= '<tr>';
             $content .= '<td>' . $status . '</td>';
